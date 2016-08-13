@@ -40,7 +40,7 @@ sling:
 
 ## Encrypting confidential data
 - Start the config server with `-DSLING_ENCRYPT_KEY=<encrypt_key>`
-- Encrypt the string you want to encrypt using the below curl command, use the <encrypt_key> as password when prompted
+- Encrypt the string you want to encrypt using the below curl command, use the `<encrypt_key>` as password when prompted
 ```
 curl -X POST -u slingadmin http://<config_server>:8888/encrypt -d <string_to_encrypt>
 ```
