@@ -30,7 +30,7 @@ prepaid:
 sling:
   mongo:
     username: MONGO_USERNAME                        # mongo database username
-    password: `{encrypt}ENCRYPTED_MONGO_PASSWORD`   # encrypted password, refer to How to Encrypt the password section
+    password: `{encrypt}ENCRYPTED_MONGO_PASSWORD`   # encrypted password, refer to "Encrypting confidential data" section
     dbname: msmongoprod                             # database name to use
     host1: MONGO_HOST1:MONGO_PORT                   # host and port for mongo server1 in the cluster
     host2: MONGO_HOST2:MONGO_PORT                   # host and port for mongo server2 in the cluster
