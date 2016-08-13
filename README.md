@@ -36,5 +36,16 @@ sling:
     host2: MONGO_HOST2:MONGO_PORT                   # host and port for mongo server2 in the cluster
     host3: MONGO_HOST3:MONGO_PORT                   # host and port for mongo server3 in the cluster
 ```
+***
 
+## Encrypting confidential data
+- Start the config server with `-DSLING_ENCRYPT_KEY=<encrypt_key>`
+- Encrypt the string you want to encrypt using the below curl command, use the <encrypt_key> as password when prompted
+```
+curl -X POST -u slingadmin http://<config_server>:8888/encrypt -d <string_to_encrypt>
+```
+- Use the result of the previous command with the prefix {encrypt} and enclose it with single back quote (`)
+```
+`{cipher}269dee6aad0e1d6b23206cbd6e25a46c672627beb4df6fcfb39d7b4c48235f89`
+```
 
