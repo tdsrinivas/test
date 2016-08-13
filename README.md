@@ -28,14 +28,13 @@ sling:
 ```
 ***
 
-## 
+## sling-service-zuul-prod.yml
 
-## fdafsd
+- Update theia listener configuration
+```
+slingTheiaListener:
+  host: THEIA_HOST_NAME # for e.g., http://svip-theialistener.int.slingtv.com
+  port: THEIA_PORT      # for e.g., 10555
+```
 
-Update slingTheiaListener in “prepaid" and “zuul"
-> We loved with a love that was more than love
-
-> We loved with a love that was more fsa love
-
-> fd
 
