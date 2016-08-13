@@ -8,28 +8,26 @@ slingTheiaListener:
   port: THEIA_PORT      # for e.g., 10555
 ```
 
-
 - Set prepaid endpoint
 ```
 prepaid:
-    endpoint: INCOMM_HOST_NAME
+    endpoint: INCOMM_HOST_NAME # for e.g., https://qvip-ext-incomm.int.slingtv.com/transferedvalue/gateway
     dbCollection: "prepaid_transaction_log"
 ```
-**INCOMM_HOST_NAME**: Incomm host name, for e.g., _https://qvip-ext-incomm.int.slingtv.com/transferedvalue/gateway_
 
 - Configure Mongo URI
-`
+```
 sling:
-mongo:
-username: MONGO_USERNAME
-password: `{encrypt}ENCRYPTED_MONGO_PASSWORD`
+  mongo:
+    username: MONGO_USERNAME
+    password: `{encrypt}ENCRYPTED_MONGO_PASSWORD`
+    
 spring:
-data:
-mongodb:
-# for e.g., update with prod mongo uri
-uri: mongodb://${sling.mongo.username}:${sling.mongo.password}@MONGO_HOST1:27017,MONGO_HOST2:27017,MONGO_HOST3:27017/msqamongo
-
-`
+  data:
+    mongodb:
+      # for e.g., update with prod mongo uri
+      uri: mongodb://${sling.mongo.username}:${sling.mongo.password}@MONGO_HOST1:27017,MONGO_HOST2:27017,MONGO_HOST3:27017/msqamongo
+```
 ***
 
 ## 
