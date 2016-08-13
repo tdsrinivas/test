@@ -44,8 +44,9 @@ sling:
 ```
 curl -X POST -u slingadmin http://<config_server>:8888/encrypt -d <string_to_encrypt>
 ```
-- Use the result of the previous command with the prefix {encrypt} and enclose it with single back quote (`)
+- Use the result of the previous command with the prefix {cipher} and enclose it with single back quotes (`)
 ```
 `{cipher}269dee6aad0e1d6b23206cbd6e25a46c672627beb4df6fcfb39d7b4c48235f89`
 ```
+_Note: Make sure you don't copy the command prompt when you copy the encrypted string_
 
