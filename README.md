@@ -1,5 +1,15 @@
 # Prod git repo configuration
 
+## sling-service-zuul-prod.yml
+
+- Update theia listener configuration
+```
+slingTheiaListener:
+  host: THEIA_HOST_NAME # for e.g., http://svip-theialistener.int.slingtv.com
+  port: THEIA_PORT      # for e.g., 10555
+```
+***
+
 ## prepaid-prod.yml
 - Update theia listener configuration
 ```
@@ -25,16 +35,6 @@ sling:
     host1: MONGO_HOST1:MONGO_PORT                   # host and port for mongo server1 in the cluster
     host2: MONGO_HOST2:MONGO_PORT                   # host and port for mongo server2 in the cluster
     host3: MONGO_HOST3:MONGO_PORT                   # host and port for mongo server3 in the cluster
-```
-***
-
-## sling-service-zuul-prod.yml
-
-- Update theia listener configuration
-```
-slingTheiaListener:
-  host: THEIA_HOST_NAME # for e.g., http://svip-theialistener.int.slingtv.com
-  port: THEIA_PORT      # for e.g., 10555
 ```
 
 
